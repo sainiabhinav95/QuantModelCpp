@@ -16,6 +16,10 @@ int main(){
         " Yield (%): " << ts.first * 100 <<
         " Volatility (%): " << ts.second * 100 << "\n";
     }
+    // Post 10Y we will use the below data to extrapolate the tree
+    auto extrap_ts = std::pair<float, float>{0.0645, 0.10};
+
+
 
     return 0;
 
